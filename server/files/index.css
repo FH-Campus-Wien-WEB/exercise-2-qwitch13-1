@@ -1,0 +1,41 @@
+@import url(base.css);
+
+h1 {
+  font-size: 200%;
+  margin: 8px 0px;
+}
+
+img {
+  border-radius: 12px;
+}
+
+article {
+  background-color: lightgray;
+  border-radius: 16px;
+  padding: 16px;
+  margin: 2vw;
+}
+
+span {
+  margin-right: 4px;
+}
+
+.genre {
+  padding: 4px 8px;
+  border: solid black 1px;
+  border-radius: 6px;
+  background-color: darkgray;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+}
+
+select {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}

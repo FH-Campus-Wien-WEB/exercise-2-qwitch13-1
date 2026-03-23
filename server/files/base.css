@@ -1,0 +1,11 @@
+body {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+button {
+    padding: 0px 8px;
+    margin-right: 8px;
+    border-width: 1px;
+    border-radius: 4px;
+    font-size: 110%;
+}
