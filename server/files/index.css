@@ -1,41 +1,145 @@
 @import url(base.css);
 
-h1 {
-  font-size: 200%;
-  margin: 8px 0px;
+/* Styles the overall page body — sets the font, centers the content, and defines the background. */
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray text */
 }
 
+/* Styles the page header — contains the "Movies!" heading at the top. */
+header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Styles the <main> container — uses flexbox to arrange the movie cards in a responsive grid. */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Styles all images — used for the movie poster inside each <figure>. */
 img {
-  border-radius: 12px;
+  border-radius: 8px;
+  max-width: 100%;
+  display: block;
 }
 
-article {
-  background-color: lightgray;
-  border-radius: 16px;
-  padding: 16px;
-  margin: 2vw;
-}
-
-span {
-  margin-right: 4px;
-}
-
-.genre {
-  padding: 4px 8px;
-  border: solid black 1px;
-  border-radius: 6px;
-  background-color: darkgray;
+/* Styles the main page heading — the "Movies!" title inside the <header>. */
+h1 {
   font-weight: bold;
+  font-size: 2em;
 }
 
-input {
-  width: 100%;
+/* Styles the movie title headings — each <h2> is created dynamically inside an <article>. */
+h2 {
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  font-size: 1.4em;
+  display: inline-block;
 }
 
-select {
-  width: 100%;
+/* Styles the hover effect on movie titles — adds a deeper violet shadow when the user hovers. */
+h2:hover {
+  box-shadow: 0 2px 8px rgba(138, 43, 226, 0.8); /* Violet shadow at 80% opacity on hover */
+  border-radius: 8px;
+  background-color: rgba(138, 43, 226, 0.2); /* Violet background at 10% opacity */
 }
 
-textarea {
-  width: 100%;
+/* Styles each movie card — the <article> elements are created dynamically via JavaScript. */
+article {
+  background-color: #ffffff; /* White card background */
+  border-radius: 10px;
+  margin: 0;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); /* Black shadow at 12% opacity */
+  flex: 0 0 350px;
+}
+
+/* Styles the hover effect on movie cards — adds a deeper shadow when the user hovers. */
+article:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Black shadow at 20% opacity on hover */
+}
+
+/* Styles all <span> elements — adds spacing between inline items. */
+span {
+  margin-right: 6px;
+}
+
+/* Styles the genre badges — applied dynamically via JavaScript to <li> elements inside the genre list. */
+.genre { /* dynamically applied via JavaScript */
+  background-color: #e8e8e8; /* Light gray genre badge background */
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid #ccc; /* Medium gray border */
+  display: inline-block;
+  font-size: 0.9em;
+  margin-bottom: 4px;
+}
+
+.edit_btn { /* dynamically applied via JavaScript */
+  background-color: #4CAF50; /* Green background */
+  padding: 6px 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+/* Styles the metadata line (runtime and release date) — applied dynamically via JavaScript to a <p>. */
+.meta { /* dynamically applied via JavaScript */
+  color: #666; /* Medium gray meta text */
+  margin: 4px 0 12px 0;
+  font-size: 0.95em;
+}
+
+/* Styles the plot description paragraph — applied dynamically via JavaScript to a <p>. */
+.plot { /* dynamically applied via JavaScript */
+  margin: 12px 0;
+  line-height: 1.5;
+}
+
+/* Styles each word in the plot text — enables the speed-read hover effect. */
+.plot-word { /* dynamically applied via JavaScript */
+  display: inline;
+  border-radius: 4px;
+  padding: 1px 2px;
+  transition: background-color 0.1s, color 0.1s;
+  cursor: default;
+}
+
+/* Highlights the word under the cursor with a violet background for speed reading. */
+.plot-word:hover {
+  background-color: rgba(138, 43, 226, 0.2); /* Violet background at 20% opacity */
+  color: #000; /* Black text for contrast */
+}
+
+/* Styles the subsection headings (Directors, Writers, Actors) — each <h3> is inside a <section>. */
+h3 {
+  font-size: 1.1em;
+  margin: 14px 0 4px 0;
+}
+
+/* Styles the <figure> element that wraps the movie poster image. */
+figure {
+  margin: 0;
+}
+
+/* Styles all unordered lists — used for genres, directors, writers, and actors. */
+ul {
+  margin: 4px 0;
+  padding-left: 24px;
+}
+
+/* Styles all list items inside the <ul> lists. */
+li {
+  margin: 2px 0;
 }

@@ -1,1 +1,7 @@
 node_modules/
+.idea/
+.*/
+*.log
+*.md
+*.tmp
+*.DS_Store
