@@ -1,19 +1,19 @@
-/* Task 1.1. Add your movie data here 
+/* Task 1.1. Add your movie data here
    and export it so it"'s available in _e1_server.js */
 /**
- * movie-model.js — The data layer of our application.
+ * movie-model.js — the data layer of our application.
  *
- * This module stores all movie data in a single JavaScript object (not an array).
- * The KEY of each entry is the movie"'s imdbID (e.g. "tt0133093").
- * The VALUE is the full movie object with all its properties.
+ * this module stores all movie data in a single JavaScript object (not an array).
+ * the KEY of each entry is the movie"'s imdbID (e.g. "tt0133093").
+ * the VALUE is the full movie object with all its properties.
  *
- * WHY an object instead of an array?
- *   - Looking up a movie by its imdbID is O(1) — just "movies[imdbID]".
- *   - With an array you would need to loop through every element to find one movie.
- *   - Adding or replacing a movie is also O(1) — just "movies[imdbID] = newData".
+ * why an object instead of an array?
+ *   - looking up a movie by its imdbID is O(1) — just "movies[imdbID]".
+ *   - with an array you would need to loop through every element to find one movie.
+ *   - adding or replacing a movie is also O(1) — just "movies[imdbID] = newData".
  *
- * We use "module.exports" to make this object available to other files.
- * In server.js the import "require("'./movie-model.js"')" gives back exactly
+ * we use "module.exports" to make this object available to other files.
+ * in server.js the import "require("'./movie-model.js"')" gives back exactly
  * what we assign to "module.exports" here.
  */
 
@@ -71,9 +71,9 @@ const movies = {
 /**
  * module.exports — Node.js mechanism for sharing code between files.
  *
- * Whatever you assign to "module.exports" becomes the return value
+ * whatever you assign to "module.exports" becomes the return value
  * of "require(./movie-model.js"')" in any other file.
- * Here we export the entire "movies" object so server.js can read
+ * here we export the entire "movies" object so server.js can read
  * and modify it.
  */
 module.exports = movies;

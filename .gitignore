@@ -5,3 +5,5 @@ node_modules/
 *.md
 *.tmp
 *.DS_Store
+package-lock.json
+package.json

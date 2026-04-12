@@ -13,26 +13,26 @@
     </header>
     <main aria-label="Movie catalog">
       <form id="movie-form">
-        <!-- imdbID -->
+        <!-- imdbid -->
         <input type="hidden" id="imdbID" />
-        <!-- Title -->
+        <!-- title -->
         <div>
           <label for="Title">Title</label>
           <input type="text" id="Title" required />
         </div>
 
-        <!-- Released date — type="date" gives a date picker in most browsers -->
+        <!-- released date — type="date" gives a date picker in most browsers -->
         <div>
           <label for="Released">Released</label>
           <input type="date" id="Released" required />
         </div>
 
-        <!-- Runtime — type="number" restricts input to digits -->
+        <!-- runtime — type="number" restricts input to digits -->
         <div>
           <label for="Runtime">Runtime (minutes)</label>
           <input type="number" id="Runtime" required />
         </div>
-        <!-- Genres -->
+        <!-- genres -->
         <div>
           <label for="Genres">Genres</label>
           <select id="Genres" multiple required>
@@ -63,49 +63,49 @@
           </select>
         </div>
 
-        <!-- Directors — comma-separated text input -->
+        <!-- directors — comma-separated text input -->
         <div>
           <label for="Directors">Directors</label>
           <input type="text" id="Directors" required />
         </div>
 
-        <!-- Writers -->
+        <!-- writers -->
         <div>
           <label for="Writers">Writers</label>
           <input type="text" id="Writers" required />
         </div>
 
-        <!-- Actors -->
+        <!-- actors -->
         <div>
           <label for="Actors">Actors</label>
           <input type="text" id="Actors" required />
         </div>
 
-        <!-- Plot -->
+        <!-- plot -->
         <div>
           <label for="Plot">Plot</label>
           <textarea id="Plot" rows="5" required></textarea>
         </div>
 
-        <!-- Poster URL -->
+        <!-- poster url -->
         <div>
           <label for="Poster">Poster URL</label>
           <input type="url" id="Poster" required />
         </div>
 
-        <!-- Metascore -->
+        <!-- metascore -->
         <div>
           <label for="Metascore">Metascore</label>
           <input type="number" id="Metascore" required />
         </div>
 
-        <!-- IMDb Rating -->
+        <!-- imdb rating -->
         <div>
           <label for="imdbRating">IMDb Rating</label>
           <input type="number" id="imdbRating" step="0.1" required />
         </div>
 
-        <!-- Buttons -->
+        <!-- buttons -->
         <button type="button" onclick="putMovie()">Save</button>
         <button type="button" onclick="location.href='index.html'">Cancel</button>
       </form>
